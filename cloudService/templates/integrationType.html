@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    <label for="integration_type">Select Integration Type:</label>
+    <select name="integration_type" id="integration_type" required>
+        <option value="github">GitHub</option>
+        <option value="gitlab">GitLab</option>
+    </select>
+    <button type="submit">Next</button>
+</form>
+{% endblock %}

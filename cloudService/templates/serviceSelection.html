@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    <label for="cloud_service">Select Cloud Service:</label>
+    <select name="cloud_service" id="cloud_service" required>
+        <option value="AWS">Amazon Web Service</option>
+        <option value="Google Cloud Platform">GCP</option>
+        <option value="Microsoft Azure">Azure</option>
+    </select>
+    <button type="submit">Next</button>
+</form>
+{% endblock %}

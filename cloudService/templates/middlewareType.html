@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    <label for="middleware">Select Middleware:</label>
+    <select name="middleware" id="middleware" required>
+        <option value="apache">Apache</option>
+        <option value="nginx">Nginx</option>
+    </select>
+    <button type="submit">Next</button>
+</form>
+{% endblock %}

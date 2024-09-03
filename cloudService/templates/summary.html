@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Cloud Service: {{ session.cloud_service }}</p>
+<p>Integration Type: {{ session.integration_type }}</p>
+<p>Middleware: {{ session.middleware }}</p>
+<form method="POST">
+    <button type="submit">Proceed to Integration</button>
+</form>
+{% endblock %}
