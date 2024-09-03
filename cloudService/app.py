@@ -83,5 +83,8 @@ def gitlab_integration():
     # Similar logic for GitLab OAuth can be implemented here
     return "GitLab integration is under construction."
 
+def run_server():
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    run_server()
