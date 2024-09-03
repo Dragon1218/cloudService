@@ -12,7 +12,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'cloudService=cloudService.app:main',
+            'cloudService=cloudService.app:run_server',
         ],
     },
     author='Zivan Stanojevic',
